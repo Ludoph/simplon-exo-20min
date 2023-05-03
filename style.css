@@ -1,0 +1,393 @@
+@import url('https://fonts.cdnfonts.com/css/helveticaneue-condensed');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-inserat-lt-std');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 60px 40px;
+}
+
+/*===================================================*/
+/*===================================================*/
+
+header .top {
+    display: flex;
+    flex-direction: row;
+
+}
+
+header .logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .img-content {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 0 30px;
+}
+
+header .img-content img {
+    /* display: flex;
+    align-items: flex-end; */
+    width: 97%;
+    margin-top: 50px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+header .img-content .author-img {
+    display: flex;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    font-family: 'HelveticaNeue Condensed', sans-serif;
+    font-style: italic;
+}
+
+header .content {
+    width: 40%;
+
+}
+
+header .content .banner {
+    background-color: rgb(11, 72, 146);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    height: 50px;
+    padding: 6px;
+}
+
+header .content .titre-article {
+    font-family: 'Helvetica Inserat LT Std', sans-serif;
+    font-size: 54px;
+    color: rgb(11, 72, 146);
+    margin-top: 30px;
+    letter-spacing: -1px;
+}
+
+header .content a {
+    font-family: 'HelveticaNeue Condensed', sans-serif;
+    font-size: 58px;
+    letter-spacing: -1px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+header .content a:checked, 
+header .content a:visited{
+    text-decoration: none;
+}
+
+header .content span {
+    color: rgb(11, 72, 146);
+    font-family: 'Helvetica Inserat LT Std', sans-serif;
+}
+
+header hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header .bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+@media (max-width: 870px) {
+    header .content .banner {
+        font-size: 14px;
+    }
+
+    header .content .titre-article {
+        font-size: 22px;
+    }
+
+    header .content a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        margin: 40px 20px;
+    }
+
+    header .content .banner {
+        font-size: 14px;
+    }
+
+    header .content .titre-article {
+        font-size: 14px;
+    }
+
+    header .content a {
+        font-size: 16px;
+    }
+
+    header .bot {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    header .logo {
+        height: 100px;
+    }
+
+    header .img-content img {
+        height: 100px;
+        margin-top: 0;
+    }
+
+    header .author-img {
+        font-size: 7px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .content .banner {
+        font-size: 10px;
+        height: 14px;
+    }
+
+    header .content .titre-article {
+        margin-top: 6px;
+    }
+
+    header .content a {
+        margin-top: 6px;
+        font-size: 14px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/*===================================================*/
+/*===================================================*/
+main .firstblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+main .firstblock .left img {
+    width: 350px;
+    height: 300px;
+}
+
+main .firstblock .left .titre-article {
+    color: rgb(11, 72, 146);
+    text-transform: uppercase;
+    font-family: 'Helvetica Inserat LT Std', sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+main .firstblock .left a {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+main .firstblock .left a:visited,
+main .firstblock .left a:checked{
+    text-decoration: none;
+}
+
+main .firstblock .left span {
+    font-family: 'Helvetica Inserat LT Std', sans-serif;
+    color: rgb(11, 72, 146);
+}
+
+main hr {
+    margin: 10px 0;
+}
+
+main .firstblock .right {
+    background-image: url("assets/img2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1250px;
+    width: 1900px;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+main .firstblock .right h1 {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+    font-size: 130px;
+    text-transform: uppercase;
+    max-width: 50%;
+    letter-spacing: -5px;
+}
+
+main .firstblock .right a {
+    font-family: 'Helvetica Inserat LT Std', sans-serif;
+    line-height: 1.1;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    max-width: 75%;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+main .firstblock .right a:visited,
+main .firstblock .right a:checked{
+    text-decoration: none;
+}
+
+main .secondblock img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+    main .firstblock .left img {
+        margin: 0 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .firstblock .left h1,
+    main .firstblock .left a,
+    main .firstblock .left hr {
+        margin-left: 40px;
+    }
+
+    main .firstblock .right h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1130px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 100px;
+    }
+
+    main .firstblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: none;
+    }
+
+    main .firstblock .left {
+        width: none;
+    }
+
+    main .firstblock .left img {
+        width: 100%;
+        object-fit: cover;
+        margin: 10px 0;
+    }
+
+    main .firstblock .left a,
+    main .firstblock .left .titre-article {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    main .firstblock .left hr {
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+
+    main .firstblock .right {
+        width: 100%;
+        height: 800px;
+        margin: 40px 0;
+    }
+
+    main .firstblock .right h1 {
+        font-size: 80px;
+        letter-spacing: -5px;
+    }
+
+@media (max-width: 870px) {
+    main {
+        margin: 20px 20px;
+    }
+
+    main .firstblock .left a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        margin: 40px 20px;
+    }
+
+    main .firstblock .right {
+        height: 600px;
+    }
+
+    main .firstblock .right h1 {
+        font-size: 60px;
+    }
+
+    main .firstblock .right a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    main {
+        margin: 10px 0;
+    }
+    main .firstblock .left img{
+        height: 160px;
+    }
+    main .firstblock .right {
+        height: 450px;
+    }
+    main .firstblock .right h1{
+        font-size: 40px;
+    }
+    main .firstblock .right a{
+        font-size: 14px;
+    }
+}
